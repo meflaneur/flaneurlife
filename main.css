@@ -15,6 +15,11 @@ body {
     width: 100%; /* Tam genişlik */
     height: 60px; /* Üst çubuğun yüksekliği */
     border-bottom: 2px solid black; /* Alt çizgi */
+    position: fixed; /* Sayfanın üstüne sabitle */
+    top: 0; /* Yukarı hizala */
+    left: 0; /* Sola hizala */
+    background-color: white; /* Arka plan rengi */
+    z-index: 1000; /* Diğer ögelerin altında kalmaması için */
 }
 
 .box {
@@ -23,4 +28,5 @@ body {
     text-align: center;
     font-size: 18px;
     min-width: 100px;
+    background-color: white; /* İç kısmın arka planı */
 }
