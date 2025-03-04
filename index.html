@@ -1,11 +1,40 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>My first we page</title>
-    </head>
-    <body>
-        <img src="images/rust.jpg">
-        <p>bu bir denemedir</p>
-        <button>Deneme</button>
-    </body>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Image Değişimi</title>
+    <style>
+        .image-container {
+            width: 300px; /* Resmin genişliği */
+            height: 200px; /* Resmin yüksekliği */
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .image-container .second {
+            position: absolute;
+            opacity: 0; /* İkinci resmi başlangıçta gizle */
+        }
+
+        .image-container:hover .first {
+            opacity: 0; /* Üstteki resmi kaybet */
+        }
+
+        .image-container:hover .second {
+            opacity: 1; /* Alttaki resmi göster */
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="button_off" class="first">
+        <img src="button_on" class="second">
+    </div>
+</body>
 </html>
