@@ -1,1 +1,17 @@
+* {
+  margin: 0;
+  padding 0;
+  box-sizing: border-box;
+}
 
+.box1 {
+  backrgound: lightcoral;
+}
+
+.box2 {
+  backrgound: lightblue;
+}
+
+.box3 {
+  backrgound: lightgreen;
+}
