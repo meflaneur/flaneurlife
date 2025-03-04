@@ -3,40 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hover ile Resim Değiştirme</title>
+    <title>Hover ile Anında Resim Değiştirme</title>
     <style>
         .image-container {
             width: 300px;
             height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0; /* Arka plan rengi */
             position: relative;
-            display: inline-block;
         }
 
         .image-container img {
-            width: 100%; /* Resimleri kutunun genişliğine göre ayarla */
-            height: 100%;
-            object-fit: cover; /* Farklı boyuttaki resimleri düzgün göster */
-            transition: opacity 0.3s ease-in-out;
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
             position: absolute;
         }
 
         .image-container .second {
-            opacity: 0; /* İkinci resim başlangıçta görünmez */
+            display: none; /* İkinci resim başlangıçta görünmez */
         }
 
         .image-container:hover .first {
-            opacity: 0; /* Üzerine gelince ilk resmi kaybet */
+            display: none; /* İlk resim kaybolur */
         }
 
         .image-container:hover .second {
-            opacity: 1; /* İkinci resmi göster */
+            display: block; /* İkinci resim anında görünür */
         }
     </style>
 </head>
 <body>
     <div class="image-container">
-        <img src="images/button_on.png" class="first">
-        <img src="images/button_off.png" class="second">
+        <img src="button_off.png" class="first">
+        <img src="button_on.png" class="second">
     </div>
 </body>
 </html>
+
