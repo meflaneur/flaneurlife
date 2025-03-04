@@ -4,21 +4,14 @@
     box-sizing: border-box;
 }
 
-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    gap: 20px;
-    background-color: #f5f5dc; /* Kum rengi arka plan */
+.box1 {
+    background: lightcoral;
 }
 
-.box1, .box2, .box3 {
-    width: 150px;
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid black; /* Siyah çerçeve */
-    background-color: white;
+.box2 {
+    background: lightblue;
+}
+
+.box3 {
+    background: lightgreen;
 }
