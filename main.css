@@ -4,14 +4,16 @@
     box-sizing: border-box;
 }
 
-.box1 {
-    background: lightcoral;
-}
+main{
+    .box1 {
+        background: lightcoral;
+    }
 
-.box2 {
-    background: lightblue;
-}
+    .box2 {
+        background: lightblue;
+    }
 
-.box3 {
-    background: lightgreen;
+    .box3 {
+        background: lightgreen;
+    }
 }
