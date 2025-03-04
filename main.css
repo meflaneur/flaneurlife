@@ -1,17 +1,24 @@
 * {
-  margin: 0;
-  padding 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.box1 {
-  backrgound: lightcoral;
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 20px;
+    background-color: #f5f5dc; /* Kum rengi arka plan */
 }
 
-.box2 {
-  backrgound: lightblue;
-}
-
-.box3 {
-  backrgound: lightgreen;
+.box1, .box2, .box3 {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black; /* Siyah çerçeve */
+    background-color: white;
 }
